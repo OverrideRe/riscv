@@ -15,8 +15,7 @@
 
 
 #![no_std]
-#![feature(asm)]
-#![cfg(feature = "inline-asm")]
+#![cfg_attr(feature = "inline-asm", feature(asm_const))]
 extern crate bare_metal;
 #[macro_use]
 extern crate bitflags;
